@@ -1,0 +1,135 @@
+/* App.css */
+
+/* Background with Image and Gradient Overlay */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('https://static.vecteezy.com/system/resources/thumbnails/053/856/736/small_2x/beautiful-blue-sky-with-a-few-red-flowers-in-the-foreground-the-flowers-are-scattered-throughout-the-scene-with-some-in-the-foreground-and-others-in-the-background-free-photo.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensure the image covers the entire page */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+  }
+  
+  /* Centered Glassy Div */
+  .hello {
+    background: rgba(203, 32, 32, 0); /* Slight transparency for glass effect */
+    backdrop-filter: blur(15px); /* Frosted glass effect */
+    -webkit-backdrop-filter: blur(15px); /* For Safari */
+    border-radius: 15px; /* Rounded corners */
+    padding: 30px 50px; /* Spacing around the text */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0); /* Subtle shadow for depth */
+    text-align: center; /* Center the text */
+    font-size: 24px; /* Font size for "Hello World" */
+    color: rgb(0, 0, 0); /* White text for contrast */
+    font-weight: bold;
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border for glass effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+  }
+  
+  /* Hover Effect for Glassy Div */
+  .hello:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5); /* Enhanced shadow */
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #0f0f0f;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-weight: bolder;
+    font-family:sans-serif;
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 20px;
+    margin: 12px 0;
+    border: none;
+    border-radius: 10px;
+    background: rgba(223, 216, 216, 0.2);
+    color: #000000;
+    font-size: 16px;
+    box-shadow: inset 0 2px 5px rgba(255, 255, 255, 0.1);
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: #121870;
+  }
+  
+  /* Buttons */
+  button.buttons {
+    background: rgb(255, 0, 0);
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  button.buttons:hover {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    transform: scale(1.05);
+  }
+  
+  button.switch-form {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  button.switch-form:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+  }
+  
+  /* Messages */
+  p {
+    font-size: 14px;
+    margin-top: 15px;
+    color: #ffffff;
+  }
+  
+  /* Smooth Animation */
+  .container:hover {
+    transform: scale(1.03);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Minimalistic Adjustments */
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  button.buttons, input {
+    width: 90%;
+  }
+  
+  .switch-form{
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
